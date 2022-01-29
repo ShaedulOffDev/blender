@@ -1,0 +1,189 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background: #222;
+    box-shadow: 0 0 20px 1px #33333390;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 15px
+}
+#images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 0 20px 2px #22222220;
+    border-radius: 10px;
+}
+
+.id {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    background: #22222250;
+    box-shadow: 0 0 10px 1px #ffffff50;
+    width: 35px;
+    color: #fff;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    padding: 10px;
+}
+
+.download {
+    width: 100%;
+    padding: 5px 15px 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.box i {
+    cursor: pointer;
+    transition: .2s;
+}
+
+#images .fa-heart {
+    color: #fff;
+    text-shadow: 0 0 2px #222;
+}
+
+#images .fa-bookmark {
+    color: #fff;
+    text-shadow: 0 0 2px #222;
+    margin: 3px;
+}
+
+.save {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    opacity: .7;
+    transition: .3s;
+}
+
+.save:hover {
+    opacity: 1;
+}
+
+.wrap {
+    left:0;
+    background: rgba(0,0,0,.7);
+    box-shadow: 0 0 30px 1px #22222220;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: .3s;
+    overflow-y: scroll;
+    display: flex;
+    top: 0;
+    transform: translateX(100vw);
+}
+
+.saver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    color: #fff;
+    width: 60px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close .fa-close {
+    left: 10px;
+    top: 10px;
+}
+
+.post {
+    position: relative;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    border: 1px solid #fffsss
+}
+
+.fa-trash-alt {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff0f0f;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    object-fit: cover;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px
+}
+footer a{
+    text-decoration: none;
+    color: dodgerblue
+}
